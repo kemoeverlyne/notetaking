@@ -4,10 +4,10 @@ from .serializers  import NotesSerializer, CategorySerializer
 from .models import Note, Category
  
 class NotesViewSet(viewsets.ModelViewSet):
-    query = Note.objects.all()
+    queryset = Note.objects.all()
     serializer_class = NotesSerializer
     
 class CategoryViewSet(viewsets.ModelViewSet):
-    query = Category.objects.all()
+    queryset = Category.objects.all()
     serializer_class = CategorySerializer    
 
